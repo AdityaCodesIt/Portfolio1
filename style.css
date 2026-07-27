@@ -558,6 +558,10 @@ body {
     .hero-right-content {
         align-items: center;
         text-align: center;
+        max-width: 100%;
+    }
+    .hero-left-content {
+        max-width: 100%;
     }
     .turning-ideas, .stat-item {
         justify-content: center;
@@ -568,6 +572,11 @@ body {
         left: 0;
         transform: none;
         margin-top: 50px;
+        height: auto;
+    }
+    .hero-image img {
+        height: auto;
+        max-width: 100%;
     }
     .location-globe {
         justify-content: center;
@@ -582,27 +591,41 @@ body {
 
 @media (max-width: 768px) {
     .portfolio-container {
-        padding: 0 20px;
+        padding: 0 15px;
     }
     
     .hero-top-bar {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 15px;
+        gap: 10px;
+        margin-bottom: 30px;
+        font-size: 11px;
+    }
+
+    .hero-content-wrapper {
+        gap: 30px;
+        margin-top: 10px;
     }
 
     .greeting {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .name {
-        font-size: 55px;
+        font-size: 14vw;
         line-height: 0.9;
+        margin-bottom: 15px;
     }
 
     .title {
-        font-size: 16px;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .description {
+        font-size: 13px;
+        margin-bottom: 25px;
     }
     
     .hero-bg-text {
@@ -610,12 +633,36 @@ body {
         letter-spacing: 0;
     }
     
+    .hero-image img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .turning-ideas {
+        flex-direction: column;
+        margin-bottom: 40px;
+        font-size: 12px;
+    }
+    
     .stats {
-        gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .stat-item {
+        flex-direction: column;
+        flex: 1 1 40%;
+        gap: 5px;
     }
 
     .stat-item h3 {
-        font-size: 35px;
+        font-size: 32px;
+    }
+    
+    .stat-item p {
+        font-size: 9px;
     }
 
     .project-grid {
@@ -623,7 +670,27 @@ body {
     }
     
     .project-img-box {
-        height: 220px;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+    
+    .project-num {
+        font-size: 28px;
+    }
+    
+    .project-title-group h4 {
+        font-size: 16px;
+    }
+    
+    .project-title-group p {
+        font-size: 10px;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 30px;
     }
     
     .section-header h2 {
@@ -635,45 +702,89 @@ body {
         margin-bottom: 30px;
     }
     
+    .edu-item {
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 25px;
+    }
+    
+    .edu-item .year {
+        align-self: flex-start;
+    }
+    
     .process-timeline {
-        padding-left: 50px;
+        padding-left: 45px;
     }
     
     .step-num {
-        font-size: 22px;
-        left: -50px;
+        font-size: 20px;
+        left: -45px;
+        top: 2px;
+    }
+    
+    .step-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .timeline-line {
+        left: 14px;
+    }
+    
+    .step-text h4 {
+        font-size: 14px;
+    }
+
+    .step-text p {
+        font-size: 12px;
     }
     
     .quote-box {
-        padding: 40px 25px;
+        padding: 30px 20px;
     }
     
     .quote-icon {
-        font-size: 60px;
+        font-size: 40px;
+        margin-top: 0;
     }
     
     .quote-text {
-        font-size: 20px;
+        font-size: 18px;
+        margin-bottom: 20px;
     }
     
     .quote-signature {
-        font-size: 28px;
-        margin-bottom: 40px;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    
+    .quote-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .footer {
+        gap: 30px;
+        padding-bottom: 40px;
     }
     
     .footer-left h2 {
-        font-size: 28px;
+        font-size: 32px;
+        margin-bottom: 15px;
     }
     
     .footer-desc {
         font-size: 13px;
+        margin-bottom: 25px;
     }
     
     .contact-item {
         gap: 15px;
+        word-break: break-word;
     }
     
     .footer-right .laptop-img-box img {
-        height: 200px !important;
+        height: 180px !important;
     }
 }
