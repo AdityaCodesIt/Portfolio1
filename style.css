@@ -355,7 +355,7 @@ body {
 
 .timeline-line {
     position: absolute;
-    left: 17px;
+    left: 78px; /* 60px padding + 18px (half of 36px icon) */
     top: 30px;
     bottom: 50px;
     width: 1px;
@@ -631,11 +631,19 @@ body {
     .hero-bg-text {
         font-size: 25vw;
         letter-spacing: 0;
+        top: 15%; /* Push slightly up so it doesn't overlap everything */
+        opacity: 0.3;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     
     .hero-image img {
-        width: 80%;
-        max-width: 300px;
+        width: 100%;
+        max-width: 450px;
     }
 
     .turning-ideas {
@@ -728,7 +736,7 @@ body {
     }
     
     .timeline-line {
-        left: 14px;
+        left: 60px; /* 45px padding + 15px (half of 30px icon) */
     }
     
     .step-text h4 {
