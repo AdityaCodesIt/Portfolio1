@@ -609,13 +609,15 @@ body {
     }
 
     .greeting {
-        font-size: 30px;
+        font-size: 35px;
+        color: var(--red);
     }
 
     .name {
-        font-size: 14vw;
-        line-height: 0.9;
-        margin-bottom: 15px;
+        font-size: 16vw;
+        line-height: 0.85;
+        margin-bottom: 20px;
+        text-shadow: 0 10px 30px rgba(0,0,0,0.8);
     }
 
     .title {
@@ -629,44 +631,64 @@ body {
     }
     
     .hero-bg-text {
-        font-size: 25vw;
+        font-size: 28vw;
         letter-spacing: 0;
-        top: 15%; /* Push slightly up so it doesn't overlap everything */
-        opacity: 0.3;
+        top: 12%; 
+        opacity: 0.15;
     }
 
     .hero-image {
         width: 100%;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        background: radial-gradient(circle at center, rgba(193,18,31,0.15) 0%, transparent 70%);
     }
     
     .hero-image img {
         width: 100%;
-        max-width: 450px;
+        max-width: none;
+        height: 60vh;
+        object-fit: cover;
+        object-position: top center;
     }
 
     .turning-ideas {
         flex-direction: column;
-        margin-bottom: 40px;
-        font-size: 12px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 13px;
     }
     
     .stats {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+        justify-content: space-around;
+        gap: 10px;
+        background: rgba(15, 15, 15, 0.75);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        padding: 25px 15px;
+        border-radius: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        margin-top: -70px;
+        position: relative;
+        z-index: 10;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.6);
     }
 
     .stat-item {
         flex-direction: column;
-        flex: 1 1 40%;
+        flex: 1 1 25%;
         gap: 5px;
     }
 
     .stat-item h3 {
         font-size: 32px;
+        text-shadow: 0 2px 10px rgba(193, 18, 31, 0.5);
     }
     
     .stat-item p {
